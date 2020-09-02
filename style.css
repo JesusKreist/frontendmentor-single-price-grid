@@ -27,6 +27,8 @@ html {
     margin: auto;
     margin-top: 2rem;
     font-size: 1.6rem;
+    border-radius: 10px;
+    
     
 }
 
@@ -36,6 +38,7 @@ html {
   padding-right: 2rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
+  
 }
 
 .subscription {
@@ -44,14 +47,16 @@ html {
   padding-right: 2rem;
   padding-bottom: 2rem;
   padding-top: 1rem;
+  
 }
 
 .reasons {
-  background-color: hsl(179, 69%, 44%);
+  background-color: #4abfbd;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   padding-top: 1rem;
+  
 }
 
 .signup {
@@ -102,6 +107,7 @@ body {
 .sub-header {
     font-weight: 700;
     font-size: 1.4rem;
+    color: white;
 }
 
 .signup {
@@ -119,6 +125,7 @@ body {
     position: relative;
     bottom: .4rem;
     left: .7rem;
+    color: hsl(210, 2.1%, 81.2%);
 }
 
 .reasons {
@@ -130,4 +137,5 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    color: hsl(0, 0%, 97.6%);
 }
