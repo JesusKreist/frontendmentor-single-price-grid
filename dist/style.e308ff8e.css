@@ -67,14 +67,15 @@ body {
     line-height: 1.6;
 }
 
+.block {
+    display: block;
+}
+
 
 .make-larger {
     font-size: 3rem;
+    font-weight: 700;
     
-}
-
-.block {
-    display: block;
 }
 
 .community {
@@ -82,12 +83,6 @@ body {
     color: hsl(218, 22%, 67%);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 .join {
@@ -99,6 +94,16 @@ ul {
     font-weight: 700;
 }
 
+
+.subscription {
+    color: white;
+}
+
+.sub-header {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
 .signup {
     background-color: hsl(71, 73%, 54%);
     border: none;
@@ -106,6 +111,14 @@ ul {
     text-decoration: none;
     display: inline-block;
     border-radius: .5rem;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+}
+
+.month {
+    position: relative;
+    bottom: .4rem;
+    left: .7rem;
 }
 
 .reasons {
@@ -113,5 +126,10 @@ ul {
     border-bottom-left-radius: 1rem;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
