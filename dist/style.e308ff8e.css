@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+/*  set background colour */
+html {
+    background-color: hsl(204, 43%, 93%);
+}
+
 /* set root font size */
 html {
     font-size: 10px;
@@ -15,9 +20,14 @@ html {
 
 /* layout */
 
-html {
-    background-color: hsl(204, 43%, 93%);
+.centering {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }
+
 
 .price-component {
     display: grid;
@@ -70,6 +80,7 @@ html {
 
 body {
     line-height: 1.6;
+    font-family: 'Karla', sans-serif;
 }
 
 .block {
@@ -138,6 +149,46 @@ ul {
     padding: 0;
     margin: 0;
     color: hsl(0, 0%, 97.6%);
+}
+
+@media screen and (min-width: 600px) {
+    /* layout */
+    .price-component {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 1fr;
+        grid-template-areas: "community community"
+                             "signup reasons";
+        width: 60rem;
+    }
+
+    .community {
+        grid-area: community;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .subscription {
+        grid-area: signup;
+    }
+
+    .reasons {
+        grid-area: reasons;
+    }
+
+    /* styling */
+
+    .reasons {
+       border-bottom-left-radius: 0px;
+       border-bottom-right-radius: 1em;
+    }
+
+    .subscription {
+       border-bottom-left-radius: 1em;
+    }
+    .break-large {
+        display: block;
+    }
 }
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
