@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+/* footer font */
+
 
 /*  set background colour */
 html {
@@ -20,13 +23,7 @@ html {
 
 /* layout */
 
-.centering {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
+
 
 
 .price-component {
@@ -86,7 +83,6 @@ body {
 .block {
     display: block;
 }
-
 
 .make-larger {
     font-size: 3rem;
@@ -151,8 +147,26 @@ ul {
     color: hsl(0, 0%, 97.6%);
 }
 
+.attribution {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+}
+
+/* responsive after 600px */
 @media screen and (min-width: 600px) {
+
+    /* positioning */
+    .centering {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+}
+
     /* layout */
+
+
     .price-component {
         display: grid;
         grid-template-columns: 1fr 1fr;
